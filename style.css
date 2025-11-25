@@ -1,0 +1,172 @@
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }body {
+  font-family: "Cairo", sans-serif;
+  background: #f5f5f5;
+  line-height: 1.7;
+}
+
+/* ---------------- NAVBAR ---------------- */
+nav {
+  width: 100%;
+  background: #111;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul { list-style: none; display: flex; gap: 25px; }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: .3s;
+}
+nav ul li a:hover { color: #ffcc00; }
+
+/* ---------------- HERO ---------------- */
+.hero {
+  height: 85vh;
+  background-image: url('./img/pictuer.png ') ;
+  background-repeat: no-repeat;
+ background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 { font-size: 50px; margin-bottom: 15px; }
+.hero p { font-size: 22px; margin-bottom: 25px; }
+
+.btn {
+  background: #ffcc00;
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover { background: #d4ac00; }
+
+/* ---------------- FEATURES ---------------- */
+.features {
+      padding: 27px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  transition: .3s;
+}
+
+.box:hover { transform: translateY(-8px); }
+
+.box h3 { font-size: 22px; margin-bottom: 10px; }
+
+/* ---------------- SERVICES ---------------- */
+.services {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.services h2, .features h2, .testimonials h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+ h2 {
+      text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    padding: 38px 43px 0px 0px;
+}
+.service-item {
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  transition: .3s;
+}
+
+.service-item:hover { transform: translateY(-8px); }
+
+/* ---------------- TESTIMONIALS ---------------- */
+.testimonials {
+  background: #f0f0f0;
+  padding: 80px 20px;
+}
+
+.test-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ---------------- CONTACT ---------------- */
+.contact {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #0077ff;
+  color: white;
+  padding: 14px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+  position: relative;
+  top: 10px;
+  left: 0px;
+  width: 20%;
+}
+
+.contact button:hover { background: #005fcc; }
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
